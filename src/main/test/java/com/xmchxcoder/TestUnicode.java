@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class TestUnicode {
 	@Test
 	void test() {
-		// unicode: 需要表示的东西远远 超过16位呢代表的，需要两个char 代表 1char=2byte=16bit
+		// unicode: 需要表示的东西远远 超过16位能代表的，需要两个char 代表 1char=2byte=16bit
 		// 💕: \uD83D\uDC95
 		String str = String.valueOf(Character.toChars(128149));
 		assertEquals("\uD83D\uDC95", str);
