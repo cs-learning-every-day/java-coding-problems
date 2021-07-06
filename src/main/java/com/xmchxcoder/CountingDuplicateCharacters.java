@@ -4,8 +4,9 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
+
+import static com.xmchxcoder.utils.TimeUtil.displayExecutionTime;
 
 /**
  * @author xmchx (sunhuayangak47@gmail.com)
@@ -115,8 +116,5 @@ public class CountingDuplicateCharacters {
 		// or: duplicatesV4.forEach( (k, v) -> System.out.print(k + "="+ v + ", "));
 	}
 
-	private static void displayExecutionTime(long time) {
-		System.out.println("Execution time: " + time + " ns" + " (" +
-				TimeUnit.MILLISECONDS.convert(time, TimeUnit.NANOSECONDS) + " ms)");
-	}
+
 }
